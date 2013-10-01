@@ -46,7 +46,7 @@
 - (NSString *)osb_sha1 {
    NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
 	uint8_t digest[CC_SHA1_DIGEST_LENGTH] = {0};
-	CC_SHA1(data.bytes, data.length, digest);
+	CC_SHA1(data.bytes, (CC_LONG)data.length, digest);
 	NSData *d = [NSData dataWithBytes:digest length:CC_SHA1_DIGEST_LENGTH];
 	return [d hexString];
 }

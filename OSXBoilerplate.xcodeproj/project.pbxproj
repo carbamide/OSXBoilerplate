@@ -119,6 +119,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29D3950117F378290000E397 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				AB272B851429DA4600EE2A7F /* Application Specific */,
+				AB272B831429DA2600EE2A7F /* OSXBoilerplate Code */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		29D3950217F378310000E397 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				AB9276AC142776AA00303D2F /* MainMenu.xib */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		29D3950317F3783C0000E397 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				AB9276AF142776AA00303D2F /* Model.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		29D3950417F378450000E397 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AB9276A9142776A900303D2F /* OSBAppDelegate.h */,
+				AB9276AA142776A900303D2F /* OSBAppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		AB272B831429DA2600EE2A7F /* OSXBoilerplate Code */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,11 +269,6 @@
 		AB927688142776A900303D2F = {
 			isa = PBXGroup;
 			children = (
-				AB272B9F1429E4AA00EE2A7F /* libsqlite3.dylib */,
-				AB9276F2142782E200303D2F /* SenTestingKit.framework */,
-				AB9276DA14277AB300303D2F /* CoreServices.framework */,
-				AB9276D814277A9C00303D2F /* libz.1.2.5.dylib */,
-				AB9276D614277A7400303D2F /* SystemConfiguration.framework */,
 				AB92769D142776A900303D2F /* OSXBoilerplate */,
 				AB927696142776A900303D2F /* Frameworks */,
 				AB927694142776A900303D2F /* Products */,
@@ -257,6 +286,11 @@
 		AB927696142776A900303D2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AB272B9F1429E4AA00EE2A7F /* libsqlite3.dylib */,
+				AB9276F2142782E200303D2F /* SenTestingKit.framework */,
+				AB9276DA14277AB300303D2F /* CoreServices.framework */,
+				AB9276D814277A9C00303D2F /* libz.1.2.5.dylib */,
+				AB9276D614277A7400303D2F /* SystemConfiguration.framework */,
 				AB927697142776A900303D2F /* Cocoa.framework */,
 				AB9277021427841200303D2F /* SenTestingKit.framework */,
 				AB927699142776A900303D2F /* Other Frameworks */,
@@ -277,12 +311,10 @@
 		AB92769D142776A900303D2F /* OSXBoilerplate */ = {
 			isa = PBXGroup;
 			children = (
-				AB272B851429DA4600EE2A7F /* Application Specific */,
-				AB272B831429DA2600EE2A7F /* OSXBoilerplate Code */,
-				AB9276A9142776A900303D2F /* OSBAppDelegate.h */,
-				AB9276AA142776A900303D2F /* OSBAppDelegate.m */,
-				AB9276AC142776AA00303D2F /* MainMenu.xib */,
-				AB9276AF142776AA00303D2F /* Model.xcdatamodeld */,
+				29D3950417F378450000E397 /* Classes */,
+				29D3950117F378290000E397 /* Vendor */,
+				29D3950217F378310000E397 /* User Interface */,
+				29D3950317F3783C0000E397 /* CoreData */,
 				AB92769E142776A900303D2F /* Supporting Files */,
 			);
 			path = OSXBoilerplate;
